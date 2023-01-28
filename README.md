@@ -1,3 +1,3 @@
 # Starface
 
-Say hello to my little app!
+Say hello to my little app
