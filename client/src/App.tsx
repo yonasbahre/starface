@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from "./pages/Home";
-import Page2 from "./pages/Page2";
+import Home from "./home";
+import StarPage from "./starpage";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Page2" element={<Page2 />} />
+          <Route path="/star" element={<StarPage />} />
         </Routes>
       </BrowserRouter>
     </AppDiv>
