@@ -1,0 +1,22 @@
+
+### all starserv ignores ###
+starserv/HELP.md
+starserv/target/
+!starserv/.mvn/wrapper/maven-wrapper.jar
+!starserv/**/src/main/**/target/
+!starserv/**/src/test/**/target/
+
+### STS ###
+starserv/.apt_generated
+starserv/.classpath
+starserv/.factorypath
+starserv/.project
+starserv/.settings
+starserv/.springBeans
+starserv/.sts4-cache
+
+### IntelliJ IDEA ###
+starserv/.idea
+starserv/*.iws
+starserv/*.iml
+starserv/*.ipr
