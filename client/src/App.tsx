@@ -1,11 +1,17 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Page2 from "./pages/Page2";
 
 function App() {
   return (
     <AppDiv>
-      <h1>
-        Welcome to Starface
-      </h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Page2" element={<Page2 />} />
+        </Routes>
+      </BrowserRouter>
     </AppDiv>
   )
 }
