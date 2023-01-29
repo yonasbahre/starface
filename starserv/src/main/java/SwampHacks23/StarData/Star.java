@@ -7,7 +7,7 @@ public class Star {
     public final int id;
     public String name;
     public String constellation;
-    public int distanceLightYears;
+    public int distance;
     public double solarMasses;
     public int temperature;
     public String fact;
@@ -17,7 +17,7 @@ public class Star {
     public Star(int id,
                 String name,
                 String constellation,
-                int distanceLightYears,
+                int distance,
                 double solarMasses,
                 int temperature,
                 String fact,
@@ -25,7 +25,7 @@ public class Star {
         this.id = id;
         this.name = name;
         this.constellation = constellation;
-        this.distanceLightYears = distanceLightYears;
+        this.distance = distance;
         this.solarMasses = solarMasses;
         this.temperature = temperature;
         this.fact = fact;
@@ -60,7 +60,7 @@ public class Star {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", constellation='" + constellation + '\'' +
-                ", distanceLightYears=" + distanceLightYears +
+                ", distance=" + distance +
                 ", solarMasses=" + solarMasses +
                 ", temperature=" + temperature +
                 ", fact='" + fact + '\'' +
