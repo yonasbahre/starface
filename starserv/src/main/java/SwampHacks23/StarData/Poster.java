@@ -30,10 +30,10 @@ public class Poster {
                 graphics.setColor(new Color(255, 250, 205));
                 break;
             case "orange":
-                graphics.setColor(new Color(255, 165, 0));
+                graphics.setColor(new Color(255, 185, 80));
                 break;
             case "red":
-                graphics.setColor(new Color(255, 69, 0));
+                graphics.setColor(new Color(255, 105, 97));
                 break;
             case "white":
                 graphics.setColor(new Color(230, 230, 230));
