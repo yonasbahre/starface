@@ -29,6 +29,24 @@ const AppDiv = styled.div`
     margin: 0;
     padding: 10px 0px 0px 0px;
   }
+
+  .buttonDiv {
+    background: linear-gradient(165deg, rgba(20, 20, 80, 1), rgba(20, 20, 150, 1));
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px;
+    align-items: center;
+    vertical-align: middle;
+
+    :hover {
+      background: linear-gradient(165deg, rgba(20, 20, 80, 1), rgba(20, 20, 190, 1));
+    }
+
+    :active {
+      background: linear-gradient(165deg, rgba(20, 20, 80, 1), rgba(20, 20, 215, 1));
+      text-shadow: cyan 0 0 10px;
+    }
+  }
   
   font-family: Josefin Sans, sans-serif;
   background: linear-gradient(150deg, rgba(20, 20, 20, 0.85), rgba(20, 20, 120, 0.85)), url(${bgUrl});
@@ -38,9 +56,12 @@ const AppDiv = styled.div`
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  min-width: 100vh;
+  // min-width: 100vh;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 export default App
