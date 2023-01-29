@@ -27,7 +27,7 @@ def getID():
         id = IdFinder.findID(img)
     except multipleFacesException.MulitpleFacesException:
         return make_response("Multiple faces in the image", 400)
-    except Exception:
+    except ValueError:
         return make_response("Could not find a face", 400)
     return jsonify({"star_id": id})
     
