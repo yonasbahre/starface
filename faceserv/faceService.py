@@ -11,13 +11,13 @@ app = Flask(__name__)
 @app.route('/faceService/getID', methods=["POST"])
 def getID():
     if 'file' not in request.files:
-        return make_response("File not in request", 400)
+        return make_response("File not in request", 406)
     try:
         img = imageLoader.loadIMG(request.files['file'])
     except nonImageFileException.NonImageFileException:
-        return make_response("File not an image", 400)
+        return make_response("File not an image", 406)
     except Exception:
-        return make_response("Could not read file", 400)
+        return make_response("Could not read file", 406)
     print(img.shape)
     try:
         id = IdFinder.findID(img)
