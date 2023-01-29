@@ -2,17 +2,31 @@ import styled from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home";
 import StarPage from "./starpage";
+import Star, {
+  defaultStar,
+  StarContextType,
+  defaultStarContext,
+} from "./shared/star";
+import React, { useState } from "react";
+
+export const StarContext =
+  React.createContext<StarContextType>(defaultStarContext);
 
 function App() {
+  const [star, setStar] = useState<Star>(defaultStar);
+  const updateStar = (newStar: Star): void => setStar(newStar);
+
   return (
-    <AppDiv>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/star" element={<StarPage />} />
-        </Routes>
-      </BrowserRouter>
-    </AppDiv>
+    <StarContext.Provider value={{ star, updateStar }}>
+      <AppDiv>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/star" element={<StarPage />} />
+          </Routes>
+        </BrowserRouter>
+      </AppDiv>
+    </StarContext.Provider>
   );
 }
 

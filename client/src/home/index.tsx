@@ -1,13 +1,18 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import styled from "styled-components";
 import Star from "../shared/star";
+import { StarContext } from "../App";
+import { useNavigate } from "react-router-dom";
 
 const Home: React.FC<{}> = () => {
   const [image, setImage] = useState();
   const [emptyUpload, setEmptyUpload] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const [uploadErr, setUploadErr] = useState<boolean>(false);
+
+  const navigate = useNavigate();
+  const { updateStar } = useContext(StarContext);
 
   const handleChange = (e: any): void => {
     setImage(e.target.files[0]);
@@ -42,8 +47,10 @@ const Home: React.FC<{}> = () => {
       const starservResp = await axios.get(
         `${import.meta.env.VITE_STARSERV}/star/${starId}`
       );
-      const star: Star = starservResp.data;
-      console.log(star);
+      const newStar: Star = starservResp.data;
+      console.log(newStar);
+      updateStar(newStar);
+      navigate(`/star`);
     } catch (e: any) {
       setLoading(false);
       setUploadErr(true);
