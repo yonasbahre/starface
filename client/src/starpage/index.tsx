@@ -4,6 +4,7 @@ import { StarContext } from "../App";
 import Navbar from "./navbar";
 import styled from "styled-components";
 import Fact, { FactProps } from "./fact";
+import { Link } from "react-router-dom";
 
 const StarPage: React.FC<{}> = () => {
   const { star } = useContext(StarContext);
@@ -23,6 +24,23 @@ const StarPage: React.FC<{}> = () => {
           <Fact label="Temperature (K)" info={star.temperature} />
           <Fact label="Fun Fact!" info={star.fact} />
         </FactTable>
+
+        <h2>Message Board goes here</h2>
+
+        <div style={{ display: "inline", margin: 10 }}>
+          <a
+            href={star.link}
+            target="_blank"
+            className="buttonDiv"
+            style={{
+              color: "white",
+              textDecoration: "none",
+              fontSize: "1.5rem",
+            }}
+          >
+            Further Reading on Wikipedia!
+          </a>
+        </div>
       </StarDiv>
     </OuterStarDiv>
   );
