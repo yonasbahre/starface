@@ -62,6 +62,9 @@ const Home: React.FC<{}> = () => {
   return (
     <HomeDiv>
       <h1 style={{ fontSize: "500%", padding: "1rem" }}>starface</h1>
+      <p style={{ marginTop: -10, fontSize: "1.5rem" }}>
+        An out of this world journey!
+      </p>
 
       {loading ? (
         <div>Loading...</div>
@@ -102,13 +105,25 @@ const Home: React.FC<{}> = () => {
       )}
 
       <p style={{ fontSize: "1.5em" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        <p style={{ fontSize: "2em", marginBottom: "0.75rem" }}>
+          <b>Did you know?</b>
+        </p>
+        If you were to split up the stars in our galaxy among every person on
+        Earth, each person would get <b>37 stars!</b> If that fascinates you,
+        come take a trip with us to learn more about our universe!
+        <ul style={{ textAlign: "left" }}>
+          <li>
+            Upload a selfie to be personally matched with one of the many stars
+            in our sky by our deep learning algorithm!
+          </li>
+          <li>Leave an anonymous message for future voyagers to discover!</li>
+          <li>
+            Learn more about your star with fun facts and resources for further
+            learning!
+          </li>
+          <li>Share your star profile with your friends!</li>
+        </ul>
+        Upload an image to get started!
       </p>
     </HomeDiv>
   );
