@@ -10,3 +10,5 @@ opencv-python==4.7.0.68
 six==1.16.0
 Werkzeug==2.2.2
 zipp==3.12.0
+tensorflow
+deepface

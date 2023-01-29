@@ -22,6 +22,7 @@ def getID():
     except Exception:
         return make_response("Could not read file", 406)
     print(img.shape)
+    print("img loaded")
     try:
         id = IdFinder.findID(img)
     except multipleFacesException.MulitpleFacesException:
