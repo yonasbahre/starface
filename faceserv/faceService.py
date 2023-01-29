@@ -1,14 +1,17 @@
 from flask import Flask, make_response, jsonify, request
+from flask_cors import CORS, cross_origin
 from ImageUtility import imageLoader, nonImageFileException
 from EmbeddingUtility import multipleFacesException
 from IdUtility import IdFinder
 import numpy as np
 app = Flask(__name__)
+cors = CORS(app)
 
 
 
 
 @app.route('/faceService/getID', methods=["POST"])
+@cross_origin()
 def getID():
     if 'file' not in request.files:
         return make_response("File not in request", 406)
