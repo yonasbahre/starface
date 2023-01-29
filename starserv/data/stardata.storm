@@ -1,0 +1,12 @@
+[
+    { id = 0, name = "Alpheratz", constellation = "Andromeda", distance = 97, mass = 3.80, temperature = 13800, fact = "Alpheratz is the brightest mercury-manganese star known", link = "https://en.wikipedia.org/wiki/Alpha_Andromedae" },
+    { id = 1, name = "Caph", constellation = "Cassiopeia", distance = 55, mass = 1.91, temperature = 7000, fact = "Caph was once thought to be part of a binary star system", link = "https://en.wikipedia.org/wiki/Beta_Cassiopeiae"},
+    { id = 2, name = "Schedar", constellation = "Cassiopeia", distance = 228, mass = 4.50, temperature = 4500, fact = "Schedar takes 102 days for a complete rotation", link = "https://en.wikipedia.org/wiki/Alpha_Cassiopeiae"},
+    { id = 3, name = "Mirach", constellation = "Andromeda", distance = 197, mass = 3.50, temperature = 3800, fact = "Despite being cooler than our sun, Mirach is nearly 2,000 times brighter", link = "https://en.wikipedia.org/wiki/Beta_Andromedae"},
+    { id = 4, name = "Polaris", constellation = "Ursa Minor", distance = 448, mass = 5.40, temperature = 6000, fact = "The 'North Star': though we see it as one light, Polaris is actually composed of three separate stars", link = "https://en.wikipedia.org/wiki/Polaris"},
+    { id = 5, name = "Achernar", constellation = "Eridanus", distance = 139, mass = 6.00, temperature = 15000, fact = "Achernar rotates at 250km/s causing it to take an oblate shape", link = "https://en.wikipedia.org/wiki/Achernar"},
+    { id = 6, name = "Mira", constellation = "Cetus", distance = 300, mass = 1.18, temperature = 3000, fact = "Mira sheds a trail of material as it moves, leaving a 13-light year long tail", link = "https://en.wikipedia.org/wiki/Mira"},
+    { id = 7, name = "Electra", constellation = "Taurus", distance = 400, mass = 4.60, temperature = 13500, fact = "Electa, with other bright stars in the Pleiades cluster are named after characters in Greek Tragedies", link = "https://en.wikipedia.org/wiki/Electra_(star)"},
+    { id = 8, name = "Alnitak", constellation = "Orion", distance = 1260, mass = 33.00, temperature = 30000, fact = "Alnitak is one of the three stars that form Orion's belt", link = "https://en.wikipedia.org/wiki/Alnitak"},
+    { id = 9, name = "Sirius", constellation = "Canis Major", distance = 9, mass = 2.10, temperature = 9900, fact = "Sirius is the brightest star in the night sky and one of the closest stars to Earth", link = "https://en.wikipedia.org/wiki/Sirius"}
+]
