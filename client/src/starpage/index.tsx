@@ -62,9 +62,13 @@ const StarPage: React.FC<{}> = () => {
               placeholder="Say hello to your little friends!"
               value={formInput}
               onChange={handleChange}
-              style={{ minWidth: "50%" }}
+              style={{ minWidth: "50%", fontSize: "1.2em", padding: 10 }}
             ></textarea>
-            <div className="buttonDiv" onClick={handleSubmit}>
+            <div
+              className="buttonDiv"
+              onClick={handleSubmit}
+              style={{ marginTop: 10 }}
+            >
               Post Message!
             </div>
           </FormStyle>
@@ -105,7 +109,7 @@ const StarDiv = styled.div`
 `;
 
 const FactTable = styled.div`
-  padding-top: 0.5rem;
+  padding: 0.5rem 0;
 `;
 
 const FormStyle = styled.form`
@@ -121,6 +125,7 @@ const FormStyle = styled.form`
 
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 `;
 
 const MessageBox = styled.div`

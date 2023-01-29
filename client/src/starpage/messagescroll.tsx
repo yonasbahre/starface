@@ -15,9 +15,13 @@ const Message: React.FC<MessageProps> = ({ message }) => {
 const MessageScroll: React.FC<ScrollProps> = ({ messages }) => {
   return (
     <ScrollDiv>
-      {messages.length === 0
-        ? `No messages yet - be the first to plant your flag!`
-        : messages.map((msg) => <Message message={msg} />)}
+      {messages.length === 0 ? (
+        <MessageDiv>
+          No messages yet - be the first to plant your flag!
+        </MessageDiv>
+      ) : (
+        messages.map((msg) => <Message message={msg} />)
+      )}
     </ScrollDiv>
   );
 };

@@ -67,6 +67,7 @@ const AppDiv = styled.div`
         rgba(20, 20, 80, 1),
         rgba(20, 20, 190, 1)
       );
+      cursor: pointer;
     }
 
     :active {
