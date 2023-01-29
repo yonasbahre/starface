@@ -2,32 +2,25 @@ import styled from "styled-components";
 
 export type ScrollProps = {
   messages: string[];
-}
+};
 
 type MessageProps = {
   message: string;
-}
+};
 
-const Message: React.FC<MessageProps> = ({message}) => {
-  return (
-    <MessageDiv>
-      {message}
-    </MessageDiv>
-  );
-}
+const Message: React.FC<MessageProps> = ({ message }) => {
+  return <MessageDiv>{message}</MessageDiv>;
+};
 
-const MessageScroll: React.FC<ScrollProps> = ({messages}) => {
+const MessageScroll: React.FC<ScrollProps> = ({ messages }) => {
   return (
     <ScrollDiv>
       {messages.length === 0
-      ?
-      `No messages yet - be the first to plant your flag!`
-      :
-      messages.map((msg) => <Message message={msg}/>)
-      }
+        ? `No messages yet - be the first to plant your flag!`
+        : messages.map((msg) => <Message message={msg} />)}
     </ScrollDiv>
   );
-}
+};
 
 export default MessageScroll;
 
@@ -47,4 +40,4 @@ const ScrollDiv = styled.div`
 const MessageDiv = styled.div`
   padding: 10px;
   font-size: 1em;
-`
+`;

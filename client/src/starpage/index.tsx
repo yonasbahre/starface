@@ -9,11 +9,11 @@ import axios from "axios";
 
 const StarPage: React.FC<{}> = () => {
   const { star, updateStar } = useContext(StarContext);
-  const [formInput, setFormInput] = useState<string>(""); 
+  const [formInput, setFormInput] = useState<string>("");
 
   const handleChange = (e: any): void => {
     setFormInput(e.target.value);
-  }
+  };
 
   const handleSubmit = async (e: any): Promise<void> => {
     e.preventDefault();
@@ -22,11 +22,11 @@ const StarPage: React.FC<{}> = () => {
     try {
       const resp = await axios.post(
         `${import.meta.env.VITE_STARSERV}/star/${star.id}`,
-        {message: formInput},
+        { message: formInput },
         {
-          headers: { 
-            'Content-Type' : 'application/json' 
-          }
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
       );
       updateStar(resp.data);
@@ -37,7 +37,7 @@ const StarPage: React.FC<{}> = () => {
       setFormInput("");
       console.log(e);
     }
-  }
+  };
 
   return (
     <OuterStarDiv>
@@ -56,15 +56,19 @@ const StarPage: React.FC<{}> = () => {
         </FactTable>
 
         <MessageBox>
-          <MessageScroll messages={star.messages}/>
+          <MessageScroll messages={star.messages} />
           <FormStyle onSubmit={handleSubmit}>
-            <textarea placeholder="Say hello to your little friends!" value={formInput} onChange={handleChange} style={{minWidth: "50%"}}></textarea>
+            <textarea
+              placeholder="Say hello to your little friends!"
+              value={formInput}
+              onChange={handleChange}
+              style={{ minWidth: "50%" }}
+            ></textarea>
             <div className="buttonDiv" onClick={handleSubmit}>
               Post Message!
             </div>
           </FormStyle>
         </MessageBox>
-
 
         <div style={{ display: "inline", margin: 10 }}>
           <a
