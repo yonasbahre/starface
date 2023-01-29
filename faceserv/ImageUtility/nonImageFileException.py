@@ -1,0 +1,2 @@
+class NonImageFileException(Exception):
+    pass
