@@ -37,16 +37,16 @@ public class Star {
     }
 
     public String getStarResource() {
-        if (temperature < 3000) {
+        if (temperature <= 3000) {
             return "red";
         }
-        else if (temperature < 4000) {
+        else if (temperature <= 4000) {
             return "orange";
         }
-        else if (temperature < 8000) {
+        else if (temperature <= 8000) {
             return "yellow";
         }
-        else if (temperature < 15000) {
+        else if (temperature <= 15000) {
             return "white";
         }
         else {
