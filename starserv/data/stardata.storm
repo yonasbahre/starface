@@ -6,7 +6,7 @@
     { id = 4, name = "Polaris", constellation = "Ursa Minor", distance = 448, mass = 5.40, temperature = 6000, fact = "The 'North Star': though we see it as one light, Polaris is actually composed of three separate stars", link = "https://en.wikipedia.org/wiki/Polaris"},
     { id = 5, name = "Achernar", constellation = "Eridanus", distance = 139, mass = 6.00, temperature = 15000, fact = "Achernar rotates at 250km/s causing it to take an oblate shape", link = "https://en.wikipedia.org/wiki/Achernar"},
     { id = 6, name = "Mira", constellation = "Cetus", distance = 300, mass = 1.18, temperature = 3000, fact = "Mira sheds a trail of material as it moves, leaving a 13-light year long tail", link = "https://en.wikipedia.org/wiki/Mira"},
-    { id = 7, name = "Electra", constellation = "Taurus", distance = 400, mass = 4.60, temperature = 13500, fact = "Electa, with other bright stars in the Pleiades cluster are named after characters in Greek Tragedies", link = "https://en.wikipedia.org/wiki/Electra_(star)"},
+    { id = 7, name = "Electra", constellation = "Taurus", distance = 400, mass = 4.60, temperature = 13500, fact = "Electra, with other bright stars in the Pleiades cluster are named after characters in Greek Tragedies", link = "https://en.wikipedia.org/wiki/Electra_(star)"},
     { id = 8, name = "Alnitak", constellation = "Orion", distance = 1260, mass = 33.00, temperature = 30000, fact = "Alnitak is one of the three stars that form Orion's belt", link = "https://en.wikipedia.org/wiki/Alnitak"},
     { id = 9, name = "Sirius", constellation = "Canis Major", distance = 9, mass = 2.10, temperature = 9900, fact = "Sirius is the brightest star in the night sky and one of the closest stars to Earth", link = "https://en.wikipedia.org/wiki/Sirius"}
 ]
