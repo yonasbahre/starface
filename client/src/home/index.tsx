@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import styled from "styled-components";
+import Star from "../shared/star";
 
 const Home: React.FC<{}> = () => {
   const [image, setImage] = useState();
@@ -19,13 +20,13 @@ const Home: React.FC<{}> = () => {
     }
 
     setEmptyUpload(false);
-    console.log(`Uploading!`);
     try {
+      // Get star ID from faceserv
       setUploadErr(false);
       setLoading(true);
       const formData: FormData = new FormData();
       formData.append("file", image);
-      const resp = await axios.post(
+      const faceservResp = await axios.post(
         `${import.meta.env.VITE_FACESERV}/faceService/getID`,
         formData,
         {
@@ -34,12 +35,20 @@ const Home: React.FC<{}> = () => {
           },
         }
       );
-      const starId = resp.data.star_id;
+      const starId = faceservResp.data.star_id;
+      console.log(`Star ID: ${starId}`);
+
+      // Get star info from starserv
+      const starservResp = await axios.get(
+        `${import.meta.env.VITE_STARSERV}/star/${starId}`
+      );
+      const star: Star = starservResp.data;
+      console.log(star);
     } catch (e: any) {
       setLoading(false);
       setUploadErr(true);
+      // TODO: Delete log
       console.log(e);
-      // TODO: set error
     }
   };
 
