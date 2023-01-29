@@ -10,6 +10,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class StarDataController {
@@ -73,9 +74,9 @@ public class StarDataController {
 
     @CrossOrigin
     @PostMapping(value = "/star/{id}")
-    public Star addStarMessage(@RequestBody String message, @PathVariable int id) {
+    public Star addStarMessage(@RequestBody Map<String, Object> payload, @PathVariable int id) {
         if (id < stars.size()) {
-            stars.get(id).addMessage(message);
+            stars.get(id).addMessage(String.valueOf(payload.get("message")));
             return stars.get(id);
         };
         return null;
