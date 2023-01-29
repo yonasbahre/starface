@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home";
 import StarPage from "./starpage";
 
@@ -13,7 +13,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </AppDiv>
-  )
+  );
 }
 
 // Background URL
@@ -24,14 +24,23 @@ const AppDiv = styled.div`
     font-family: Orbitron, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: cyan;
     margin: 0;
     padding: 10px 0px 0px 0px;
   }
 
   .buttonDiv {
-    background: linear-gradient(165deg, rgba(20, 20, 80, 1), rgba(20, 20, 150, 1));
+    background: linear-gradient(
+      165deg,
+      rgba(20, 20, 80, 1),
+      rgba(20, 20, 150, 1)
+    );
     border-radius: 15px;
     display: inline-block;
     padding: 10px;
@@ -39,17 +48,30 @@ const AppDiv = styled.div`
     vertical-align: middle;
 
     :hover {
-      background: linear-gradient(165deg, rgba(20, 20, 80, 1), rgba(20, 20, 190, 1));
+      background: linear-gradient(
+        165deg,
+        rgba(20, 20, 80, 1),
+        rgba(20, 20, 190, 1)
+      );
     }
 
     :active {
-      background: linear-gradient(165deg, rgba(20, 20, 80, 1), rgba(20, 20, 215, 1));
+      background: linear-gradient(
+        165deg,
+        rgba(20, 20, 80, 1),
+        rgba(20, 20, 215, 1)
+      );
       text-shadow: cyan 0 0 10px;
     }
   }
-  
+
   font-family: Josefin Sans, sans-serif;
-  background: linear-gradient(150deg, rgba(20, 20, 20, 0.85), rgba(20, 20, 120, 0.85)), url(${bgUrl});
+  background: linear-gradient(
+      150deg,
+      rgba(20, 20, 20, 0.85),
+      rgba(20, 20, 120, 0.85)
+    ),
+    url(${bgUrl});
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -62,6 +84,6 @@ const AppDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
-export default App
+export default App;
