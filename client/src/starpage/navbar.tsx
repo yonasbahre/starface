@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 const Navbar: React.FC<{}> = () => {
   return (
-    <div style={{ width: "100%" }}>
-      <SpanStyle>
-        <h1>starface</h1>
-        <h2>Share!</h2>
-      </SpanStyle>
-    </div>
+    <SpanStyle>
+      <h1>starface</h1>
+      <h2>Share!</h2>
+    </SpanStyle>
   );
 };
 

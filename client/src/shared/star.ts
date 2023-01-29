@@ -13,15 +13,15 @@ type Star = {
 
 export const defaultStar: Star = {
   id: 0,
-  name: "",
-  constellation: "",
+  name: "Star's Name!",
+  constellation: "Constellation",
   distance: 0,
   solarMasses: 0,
   temperature: 0,
-  fact: "",
-  link: "",
+  fact: "This star is hotter than your typical cup of coffee!",
+  link: "https://bit.ly/3BlS71b",
   messages: [],
-  starResource: "",
+  starResource: "blue",
 };
 
 export type StarContextType = {
