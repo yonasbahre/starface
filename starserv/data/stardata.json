@@ -1,0 +1,12 @@
+[
+{ "ID": 1, "Name": "Alpheratz", "Constellation": "Andromeda", "Distance": 97, "Mass": 3.8, "Temperature": 13800, "Fact": "Alpheratz is the brightest mercury-manganese star known", "link": "https://en.wikipedia.org/wiki/Alpha_Andromedae" },
+{ "ID": 2, "Name": "Caph", "Constellation": "Cassiopeia", "Distance": 55, "Mass": 1.91, "Temperature": 7000, "Fact": "Caph was once thought to be part of a binary star system", "link": "https://en.wikipedia.org/wiki/Beta_Cassiopeiae"},
+{ "ID": 3, "Name": "Schedar", "Constellation": "Cassiopeia", "Distance": 228, "Mass": 4.5, "Temperature": 4500, "Fact": "Schedar takes 102 days for a complete rotation", "link": "https://en.wikipedia.org/wiki/Alpha_Cassiopeiae"},
+{ "ID": 4, "Name": "Mirach", "Constellation": "Andromeda", "Distance": 197, "Mass": 3.5, "Temperature": 3800, "Fact": "Despite being cooler than our sun, Mirach is nearly 2,000 times brighter", "link": "https://en.wikipedia.org/wiki/Beta_Andromedae"},
+{ "ID": 5, "Name": "Polaris", "Constellation": "Ursa Minor", "Distance": 448, "Mass": 5.4, "Temperature": 6000, "Fact": "The 'North Star': though we see it as one light, Polaris is actually composed of three separate stars", "link": "https://en.wikipedia.org/wiki/Polaris"},
+{ "ID": 6, "Name": "Achernar", "Constellation": "Eridanus", "Distance": 139, "Mass": 6.0, "Temperature": 15000, "Fact": "Achernar rotates at 250km/s causing it to take an oblate shape", "link": "https://en.wikipedia.org/wiki/Achernar"},
+{ "ID": 7, "Name": "Mira", "Constellation": "Cetus", "Distance": 300, "Mass": 1.18, "Temperature": 3000, "Fact": "Mira sheds a trail of material as it moves, leaving a 13-light year long tail", "link": "https://en.wikipedia.org/wiki/Mira"},
+{ "ID": 8, "Name": "Electra", "Constellation": "Taurus", "Distance": 400, "Mass": 4.6, "Temperature": 13500, "Fact": "Electa, with other bright stars in the Pleiades cluster are named after characters in Greek Tragedies", "link": "https://en.wikipedia.org/wiki/Electra_(star)"},
+{ "ID": 9, "Name": "Alnitak", "Constellation": "Orion", "Distance": 1260, "Mass": 33, "Temperature": 30000, "Fact": "Alnitak is one of the three stars that form Orion's belt", "link": "https://en.wikipedia.org/wiki/Alnitak"},
+{ "ID": 10, "Name": "Sirius", "Constellation": "Canis Major", "Distance": 9, "Mass": 2.1, "Temperature": 9900, "Fact": "Sirius is the brightest star in the night sky and one of the closest stars to Earth", "link": "https://en.wikipedia.org/wiki/Sirius"}
+]
